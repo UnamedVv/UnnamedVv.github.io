@@ -14,13 +14,21 @@
     <div id="dest_copy" ondrop="drop_handler(event);" , ondragover="dragover_handler(event);">
     </div>
     <br>
-    <div>
-        <div class="sourceItems" width="120" height="120" draggable="true" id="src_copy"
+    <div class="source">
+        <!-- every source element in the source should be assigned with class value as "sourceItems" -->
+        <!-- it's used when telling whether we are selecting a source item or an exist item -->
+        <div class="sourceItems" width="120" height="120" draggable="true" id="src_copy0"
             ondragstart="dragstart_handler(event);" , ondragend="dragend_handler(event);">
             <img src="pic/猫1.jpg" width="120" height="120">
         </div>
-        <!-- <img src="pic/猫1.jpg" class="sourceItems" width="120" , height="120" draggable="true" id="src_copy"
-            ondragstart="dragstart_handler(event);" , ondragend="dragend_handler(event);"> -->
+        <div class="sourceItems" width="120" height="120" draggable="true" id="src_copy1"
+            ondragstart="dragstart_handler(event);" , ondragend="dragend_handler(event);">
+            <img src="pic/猫2.jpg" width="120" height="120">
+        </div>
+        <div class="sourceItems" width="120" height="120" draggable="true" id="src_copy2"
+            ondragstart="dragstart_handler(event);" , ondragend="dragend_handler(event);">
+            <img src="pic/猫3.jpg" width="120" height="120">
+        </div>
     </div>
 
     <script src="script.js"></script>
